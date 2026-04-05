@@ -6,7 +6,7 @@ from scipy.stats import norm
 from scipy.stats import truncnorm
 from msdsl import Function
 inv_cdf = lambda x: truncnorm.ppf(x, -6, +6)
-func = Function(inv_cdf, domain=[0.0, 0.5], order=1, numel=512, log_bits=5)
+func = Function(inv_cdf, domain=[0.0, 0.5], order=1, numel=512)
 # print(func.get_samp_points_spline())
 # for elem in func.get_samp_points_spline():
 #     print(elem)
