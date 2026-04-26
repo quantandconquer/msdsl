@@ -3,7 +3,7 @@ from scipy.interpolate import interp1d
 from scipy.fftpack import ifft
 import logging
 from math import log2, ceil
-from scipy.integrate import cumtrapz
+from scipy.integrate import cumulative_trapezoid as cumtrapz
 
 from skrf import Network
 
